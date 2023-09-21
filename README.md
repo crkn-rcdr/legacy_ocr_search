@@ -27,6 +27,7 @@ Contribution directions go here.
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
+https://docs.websolr.com/article/33-sunspot
 
 http://.c7a.ca:8983/solr/cosearch2/select?indent=on&q=tx:baseball%20AND%20pkey:oocihm.13835&wt=json&fl=key
 "response":{"numFound":18,"start":0,"docs":[
