@@ -22,4 +22,5 @@ Gem::Specification.new do |spec|
   end
 
   spec.add_dependency "rails", ">= 7.0.4.3"
+  spec.add_dependency "sunspot_rails", ">= 2.6.0.0"
 end

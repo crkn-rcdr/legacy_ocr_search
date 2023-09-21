@@ -3,6 +3,7 @@ PATH
   specs:
     legacy_ocr_search (0.1.0)
       rails (>= 7.0.4.3)
+      sunspot_rails (>= 2.6.0.0)
 
 GEM
   remote: https://rubygems.org/
@@ -177,6 +178,7 @@ PLATFORMS
 
 DEPENDENCIES
   legacy_ocr_search!
+  rsolr
   sprockets-rails
   sqlite3
   sunspot_rails
