@@ -1,13 +1,10 @@
-<span documentId="<%= @documentId %>">
-    <%= @documentId %>
-</span>
 <span term="<%= @term %>">
-    <%= @term %>
+    Results for '<%= @term %>' in this item:
 </span>
 <%= content %>
 
 <% if @legacy_ocr_search_results %>
     <% @legacy_ocr_search_results.each do |legacy_ocr_search_result| %>
-        <%= legacy_ocr_search_result['key'] %>
+        <%= legacy_ocr_search_result %><% if legacy_ocr_search_result != @legacy_ocr_search_results.last %>, <% end %>
     <% end %>
 <% end %>
