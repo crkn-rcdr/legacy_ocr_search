@@ -1,5 +1,5 @@
 <span term="<%= @term %>">
-    Results for '<%= @term %>' in this item:
+    <%= I18n.t('L_MATCHING_PAGES_PRE')%> '<%= @term %>' <%= I18n.t('L_MATCHING_PAGES_SUF')%>:
 </span>
 <%= content %>
 
