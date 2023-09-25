@@ -13,7 +13,7 @@ class LegacyOcrSearchComponent < ViewComponent::Base
             legacy_ocr_search_results_unsorted = []
             for hit in @legacy_ocr_search_request['response']['docs'] do
                 stripped=hit['key'].gsub(@prefix+'.'+@documentId+'.', '')
-                legacy_ocr_search_results_unsorted.append(stripped)
+                legacy_ocr_search_results_unsorted.append(stripped.to_i)
             end
             @legacy_ocr_search_results = legacy_ocr_search_results_unsorted.sort
         end
