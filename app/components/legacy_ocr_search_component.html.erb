@@ -5,6 +5,6 @@
 
 <% if @legacy_ocr_search_results %>
     <% @legacy_ocr_search_results.each do |legacy_ocr_search_result| %>
-        <%= legacy_ocr_search_result %><% if legacy_ocr_search_result != @legacy_ocr_search_results.last %>, <% end %>
+        <a href="/catalog/<%= @documentId %>?pageNum=<%= legacy_ocr_search_result %>&q=<%= @term %>"><%= legacy_ocr_search_result %></a><% if legacy_ocr_search_result != @legacy_ocr_search_results.last %>, <% end %>
     <% end %>
 <% end %>
